@@ -8,9 +8,9 @@ import json
 import re
 
 # --- Настройки ---
-TELEGRAM_TOKEN = "7351114996:AAExGWOJwIOH3bwqOWYMFvgbg8vJmGLG4Vs"
-OPENAI_BASE_URL = "http://localhost:5001/v1"
-MODEL_NAME = "llama-2-7b-chat.Q8_0"  # Изменено на целевую модель
+TELEGRAM_TOKEN = "TELEGRAM_BOT_TOKEN" # Ваш токен бота
+OPENAI_BASE_URL = "http://localhost:5001/v1" #OpenAI Endpoint (В дефолте указан локалхост KoboldCPP
+MODEL_NAME = "llama-2-7b-chat.Q8_0"  # Целевая модель для работы
 
 client = OpenAI(base_url=OPENAI_BASE_URL, api_key="kobold")
 bot = Bot(token=TELEGRAM_TOKEN)
